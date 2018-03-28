@@ -7,6 +7,7 @@ import {SERVER_BACK} from "./server";
 import {EntrepriseCreate, EntrepriseEdit, EntrepriseList} from "./components/entreprises";
 import {InformationCreate, InformationEdit, InformationList} from "./components/infomations";
 import {OffreCreate, OffreEdit, OffreList} from "./components/offres";
+import {UserCreate, UserEdit, UserList} from "./components/users";
 
 const myTheme = {
     palette: {
@@ -24,6 +25,20 @@ const App = () => (
         theme={myTheme}
         title='Info Tech Agency'
     >
+        <Resource
+            name="candidats"
+            list={CandidatList}
+            create={CandidatCreate}
+            edit={CandidatEdit}
+            remove={Delete}
+        />
+        <Resource
+            name="users"
+            list={UserList}
+            create={UserCreate}
+            edit={UserEdit}
+            remove={Delete}
+        />
         <Resource
             name="candidats"
             list={CandidatList}

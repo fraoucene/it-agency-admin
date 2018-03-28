@@ -1,10 +1,10 @@
-let serverBack = 'http://localhost:8880';
+let serverBack = 'https://it-agency-back.herokuapp.com';
 if (process.env.SERVER === 'production') {
-    serverBack = '/it-agency-back';
+    serverBack = 'https://it-agency-back.herokuapp.com';
 } else if (process.env.SERVER === 'development') {
-    serverBack = '/it-agency-back';
+    serverBack = 'https://it-agency-back.herokuapp.com';
 } else if (process.env.SERVER === 'local') {
-    serverBack = 'localhost:8880'
+    serverBack = 'https://it-agency-back.herokuapp.com'
 }
 
 
